@@ -677,17 +677,6 @@ discBars.forEach(bar => {
   setTimeout(() => { bar.style.height = h + '%'; bar.style.transition = 'height 1s ease'; }, 800);
 });
 
-// Form submit
-function handleSubmit(btn) {
-  const orig = btn.textContent;
-  btn.textContent = 'Sending...';
-  btn.style.background = 'var(--accent2)';
-  setTimeout(() => {
-    btn.textContent = '✓ Message Sent!';
-    setTimeout(() => { btn.textContent = orig; btn.style.background = ''; }, 3000);
-  }, 1200);
-}
-
 // Smooth active nav highlighting
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
